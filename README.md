@@ -1,3 +1,4 @@
+A simple example for reference of using python's C bindings.
 
 Setup WSL:
 https://learn.microsoft.com/en-us/windows/wsl/install
