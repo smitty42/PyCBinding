@@ -17,3 +17,11 @@ To create the shared object python will link to:
 To test your c without python:
 
 `gcc -o pi pi.c -lm`
+
+
+Setup the python env with `uv sync; /venv/bin/activate`
+
+Run the script with `python pi.py`
+This should compute Pi with a Talor series simultaneously in python directly
+and in C. You can observe the the C implementation being called from python
+converges to the true value of Pi faster then the pure python implementation.
