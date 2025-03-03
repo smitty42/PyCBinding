@@ -14,7 +14,7 @@ To create the shared object python will link to:
 
 `gcc -fPIC -shared -o pi.so pi.c` 
 
-To test your c without python:
+To test your C without python:
 
 `gcc -o pi pi.c -lm`
 
