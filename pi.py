@@ -25,7 +25,7 @@ exp = float(input("Provide a number to use to exponentiate pi:"))
 C_PI.exp_pi.restype = c_float
 print(C_PI.exp_pi(c_float(exp)))
 
-input("Continue to Taylor Computation??")
+input("Continue to Taylor Computation?")
 
 py_pi_thread = Thread(target=taylor_pi_inf)
 py_pi_thread.start()
