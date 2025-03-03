@@ -1,6 +1,6 @@
 # import time
 from threading import Thread
-from ctypes import CDLL
+from ctypes import CDLL, c_float
 
 # import termplotlib as tpl
 import numpy as np
@@ -19,6 +19,13 @@ def taylor_pi_inf(pi=np.longdouble(0.0)):
         # print(f"Python: {4 * pi}", end="", flush=True)
         print(f"Python: {4 * pi}")
 
+
+exp = float(input("Provide a number to use to exponentiate pi:"))
+
+C_PI.exp_pi.restype = c_float
+print(C_PI.exp_pi(c_float(exp)))
+
+input("Continue to Taylor Computation??")
 
 py_pi_thread = Thread(target=taylor_pi_inf)
 py_pi_thread.start()

@@ -14,7 +14,16 @@ long double taylor_pi(){
 
 }
 
+float exp_pi(float exp){
+    float pi = 3.14159;
+    float out = pow(pi, exp);
+    //printf("%f\n", out);
+    return out;
+
+}
+
 int main(){
+    printf("%f\n", exp_pi(2.0));
     taylor_pi();
     return 0;
 }
